@@ -1,29 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carro Interativo</title>
-  <link rel="stylesheet" href="css/estilo.css">
+    <title>Herança em JavaScript</title>
 </head>
+<link rel="stylesheet" href="css/estilo.css">
+
 <body>
+    <h1>Herança em JavaScript</h1>
 
-  <div class="container">
-    <h1>Meu Carro Interativo</h1>
+        <h2>Carro Esportivo</h2>
+        <img src="imagens/png-clipart-black-car-dodge-challenger-grey-transport-cars-removebg-preview.png" alt="">
+        <label for="modeloEsportivo">Modelo:</label>
+        <input type="text" id="modeloEsportivo" value="Ferrari"><br><br>
+        <label for="corEsportivo">Cor:</label>
+        <input type="text" id="corEsportivo" value="Vermelha"><br><br>
+        <div class="botao"><button onclick="criarCarroEsportivo()">Criar Carro Esportivo</button><br><br>
+        <button onclick="ligarCarroEsportivo()">Ligar</button>
+        <button onclick="desligarCarroEsportivo()">Desligar</button>
+        <button onclick="acelerarCarroEsportivo()">Acelerar</button>
+        <button onclick="frearCarroEsportivo()">Frear</button>
+        <button onclick="ativarTurbo()">Ativar Turbo</button><br><br></div>
+        <div id="resultadoEsportivo"></div>
 
-    <div id="carro-container">
-      <img id="carro-imagem" src="imagens/images-removebg-preview.png" alt="Imagem do Carro">
-      <p id="carro-status">Desligado</p>
-      <p id="carro-velocidade">Velocidade: <span id="velocidade-valor">0</span> km/h</p>
-      <p id="carro-detalhes">Modelo: <span id="modelo"></span>, Cor: <span id="cor"></span></p>
-    </div>
+        <h2>Caminhão</h2>
+        <img src="imagens/png-transparent-white-scania-utility-truck-scania-ab-car-ab-volvo-volvo-fh-hyundai-trago-scania-freight-transport-truck-mode-of-transport-removebg-preview.png"
+            alt="">
+        <label for="modeloCaminhao">Modelo:</label>
+        <input type="text" id="modeloCaminhao" value="Scania"><br><br>
+        <label for="corCaminhao">Cor:</label>
+        <input type="text" id="corCaminhao" value="Azul"><br><br>
+        <label for="capacidadeCarga">Capacidade de Carga (kg):</label>
+        <input type="number" id="capacidadeCarga" value="10000"><br><br>
+        <div class="botao"><button onclick="criarCaminhao()">Criar Caminhão</button><br><br>
+        <button onclick="ligarCaminhao()">Ligar</button>
+        <button onclick="desligarCaminhao()">Desligar</button>
+        <button onclick="acelerarCaminhao()">Acelerar</button>
+        <button onclick="frearCaminhao()">Frear</button>
+        <label for="pesoCarga">Peso da Carga (kg):</label>
+        <input type="number" id="pesoCarga" value="1000"><br>
+        <div class="botaocam"><button onclick="carregarCaminhao()">Carregar</button>
+        <button onclick="descarregarCaminhao()">Descarregar</button><br><br></div></div>
+        <div id="resultadoCaminhao"></div>
 
-    <div class="botoes">
-      <button id="ligar-desligar-btn">Ligar</button>
-      <button id="acelerar-btn">Acelerar</button>
-    </div>
-  </div>
 
-  <script src="script.js"></script>
+        <script src="javascript.js"></script>
 </body>
+
 </html>
